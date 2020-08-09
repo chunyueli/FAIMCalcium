@@ -1,0 +1,31 @@
+# FAIM.yaml
+#
+# Fully affine invariant methods (FAIM) environment for Windows10 and Ubuntu
+#
+# install: conda env create -f environment.yaml
+
+
+
+name: FAIMCalcium
+channels:
+  - anaconda-fusion
+  - defaults
+dependencies:
+  - pip
+  - python=3.7.4
+  - mkl=2019.3
+  - numpy
+  - scikit-image
+  - numba>=0.43.1
+  - pyqt
+  - scipy
+  - matplotlib
+  - pip:
+    - mxnet-mkl
+    - pandas
+    - pyqtgraph==0.11.0rc0
+    - natsort
+    - google-cloud-storage
+    - tqdm
+    - Opencv-contrib-python==3.4.2.17
+    - pystackreg
